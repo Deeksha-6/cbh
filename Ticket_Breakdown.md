@@ -16,3 +16,26 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+Would divide the task into following tickets - 
+1.Create a new field customId in the Agents Table which holds the customId value for each Agent
+    Acceptance Criteria - New Field called Custom ID should be added to the Agent Table 
+     ALTER TABLE Agent ADD CustomId varchar(255);
+     Check if the new field is added in the table by running desc on the Agent table
+     1 working day Time estimate
+2. Have ticket to accept the custome Id for each Agent - It could be through a custom script to generate the custom Id the facility client would like to add. 
+    Acceptance Criteria - UI to accept the custom script to generate the custom id for each Agent or may be a field which accepts the custom id for each Agent. This id should be stored in a new field 
+    Create an Input to accept the script to generate the UI script 
+    Or have Field to accept the Custom Id in the UI Form for each Agent which will be stored in the CustomId field in the Agent Table
+    Have test to see valid custom Id is stored in the Agent table 
+    3 working day time estimate
+3. Changes to the getShiftsByFacility to make sure the custom Id of the Agent is displayed for the metadata for the Agent .Requirements - Custom Id included in Agents Meta data information.
+  Acceptance Criteria - Custom ID for each Agent worked in the Shifts should be displayed as that is the idetifying information for the Facility. 
+  Wrtie Test to validate the above
+  2 working day time estimate to make sure changes are thorough
+  Make sure the custom ID is  included Agents metadata information in the Shifts information based on the Facitlity
+4. Changes to the generateReport to make sure the custom Id of the Agent is displayed for the metadata for the Agent as that is the identifying ID for the client. 
+  Acceptance Criteria -
+   Make sure custom Id is displayed for each Agent displayed in the report
+   Add test to make sure  valid custom ID is displayed for each Agent in quarter report 
+   2 working days to make sure the changes and test work as expected.
+ 
