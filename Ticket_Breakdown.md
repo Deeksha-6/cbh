@@ -30,7 +30,7 @@ Would divide the task into following tickets -
     3 working day time estimate
 3. Changes to the getShiftsByFacility to make sure the custom Id of the Agent is displayed for the metadata for the Agent .Requirements - Custom Id included in Agents Meta data information.
   Acceptance Criteria - Custom ID for each Agent worked in the Shifts should be displayed as that is the identifying information for the Facility. 
-  Wrtie Test to validate the above
+  Include Test to validate the above
   2 working day time estimate to make sure changes are thorough
   Make sure the custom ID is  included Agents metadata information in the Shifts information based on the Facitlity
 4. Changes to the generateReport to make sure the custom Id of the Agent is displayed for the metadata for the Agent as that is the identifying ID for the client. 
